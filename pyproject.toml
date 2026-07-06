@@ -1,0 +1,21 @@
+[project]
+name = "dlt-source-fylr"
+version = "0.1.0"
+description = "Reusable dlt source building blocks for the fylr (easydb) REST API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "dlt>=1.28.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "fylr"
+module-root = ""
+
+[dependency-groups]
+dev = []
